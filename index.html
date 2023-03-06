@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+    :root {
+      --red: hsl(0, 78%, 62%);
+      --cyan: hsl(180, 62%, 55%);
+      --orange: hsl(34, 97%, 64%);
+      --blue: hsl(212, 86%, 64%);
+      --dark-blue: hsl(234, 12%, 34%);
+      --grayish-blue: hsl(229, 6%, 66%);
+      --light-gray: hsl(0, 0%, 98%);
+    }
+
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="px-6 py-16 min-h-screen">
+    <h1 class="font-bold text-xl text-center text-[var(--dark-blue)] mb-4">
+      <span class="font-extralight block">Reliable, efficient delivery</span>
+      Powered by Technology
+    </h1>
+
+    <p class="text-center text-[var(--grayish-blue)] mb-16 max-w-lg mx-auto">
+      Our Artificial Intelligence powered tools use millions of project data points
+      to ensure that your project is successful
+    </p>
+    <div class="flex flex-col md:flex-row items-center gap-6 mx-auto justify-center">
+      <!-- 1 -->
+      <div class="border-t-4 border-[var(--cyan)] rounded-xl shadow-xl p-6  max-w-xs">
+        <h2 class="text-xl text-[var(--dark-blue)] font-bold mb-2">Supervisor</h2>
+        <p class="text-[var(--grayish-blue)] text-sm">Monitors activity to identify project roadblocks</p>
+        <img class="ml-auto h-12 mt-10" src="./images/icon-supervisor.svg" alt="">
+      </div>
+
+      <!-- 2 and 3 -->
+      <div class="flex flex-col gap-6 max-w-xs">
+        <!-- 2 -->
+        <div class="border-t-4 border-[var(--red)] rounded-xl shadow-xl p-6 ">
+          <h2 class="text-xl text-[var(--dark-blue)] font-bold mb-2">Team Builder</h2>
+          <p class="text-[var(--grayish-blue)] text-sm">Scans our talent network to create the optimal team for your
+            project</p>
+          <img class="ml-auto h-12 mt-10" src="./images/icon-team-builder.svg" alt="">
+        </div>
+        <!-- 3 -->
+        <div class="border-t-4 border-[var(--orange)] rounded-xl shadow-xl p-6 ">
+          <h2 class="text-xl text-[var(--dark-blue)] font-bold mb-2">Karma</h2>
+          <p class="text-[var(--grayish-blue)] text-sm">Regularly evaluates our talent to ensure quality</p>
+          <img class="ml-auto h-12 mt-10" src="./images/icon-karma.svg" alt="">
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="border-t-4 border-[var(--blue)] rounded-xl shadow-xl p-6 max-w-xs ">
+        <h2 class="text-xl text-[var(--dark-blue)] font-bold mb-2">Calculator</h2>
+        <p class="text-[var(--grayish-blue)] text-sm">Uses data from past projects to provide better delivery estimates
+        </p>
+        <img class="ml-auto h-12 mt-10" src="./images/icon-calculator.svg" alt="">
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
